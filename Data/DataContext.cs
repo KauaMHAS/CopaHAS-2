@@ -6,6 +6,8 @@ using CopaHAS.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 
+//Teste do GITHUB
+
 namespace CopaHAS.Data
 {
     public class DataContext : DbContext
