@@ -9,5 +9,10 @@ namespace CopaHAS.Models
     {
         public int Id { get; set; }
         public string Pais { get; set; } = string.Empty;
+
+        //1:N
+        public List<Jogador> Jogadores { get; set; } = new List<Jogador>();
+        public Tecnico? Tecnico { get; set; }
+        public List<JogoSelecao> JogoSelecoes { get; set; } = new List<JogoSelecao>();
     }
 }

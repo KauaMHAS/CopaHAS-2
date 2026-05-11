@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 
 namespace CopaHAS.Models
 {
-    public class Tecnico
+    public class JogoSelecao
     {
-        public int Id { get; set; }
-        public string Nome { get; set; } = string.Empty;
+        public int JogoId { get; set; }
         public int SelecaoId { get; set; }
+        public int Gols { get; set; }
+        public int GolsProrrogacao { get; set; }
+        public int GolsDecissaoPenaltis { get; set; }
         public Selecao SelecaoIdNavegacao { get; set; }
     }
 }
